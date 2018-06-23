@@ -2,7 +2,7 @@ window.claimFreebies = function(utilities, api) {
 
    var self       = this;
    self.candies   = [1, 2, 3, 4, 5, 8, 12, 1271, 1279];
-   self.treats    = ['home', 'mygaia', 'market', 'forum', 'games'];
+   self.treats    = ['home', 'mygaia', 'market', 'world', 'forum', 'games'];
    self.maxIndex1 = self.candies.length - 1;
    self.maxIndex2 = self.treats.length  - 1;
    self.index1    = 0;
