@@ -24,16 +24,6 @@ window.gApi = function(utilities, password) {
       };
       return data.match(patterns[pattern]);
    };
-   self.createChap = function(nonce) {
-      return utilities.md5(utilities.md5(password) + nonce);
-   };
-   self.useNonce = function(callback) {
-      utilities.getRequest('/api/v1/cashshop/generatenonce?' + utilities.queryString({
-         'ts': Date.now()
-      }), function(data) {
-         ((nonce = self.pattern(data, 'nonce')) && callback(nonce['0']));
-      });
-   };
    self.gsi = function(methods, callback) {
       utilities.postRequest('/chat/gsi/gateway.php', utilities.queryString({
          'v': 'json',
