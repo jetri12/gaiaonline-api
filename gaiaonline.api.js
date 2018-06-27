@@ -5,7 +5,6 @@ window.gApi = function(utilities, password) {
    var self     = this;
    self.pattern = function(data, pattern) {
       var patterns = {
-         'nonce':            /(([0-9]+)\.([0-9]+)\.([0-9]+))/,
          'createVend':       /your\sitem\shas\sbeen\slisted/i,
          'cancelVend':       /this\slisting\shas\sbeen\scancelled/i,
          'cancelAllVends':   /all\slistings\shas\sbeen\scancelled/i,
