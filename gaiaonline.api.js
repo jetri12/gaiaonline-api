@@ -176,7 +176,7 @@ window.gApi = function(utilities, password) {
    };
    self.dailyTreat = function(treatType, success, error) {
       utilities.postRequest('/dailytreat/payout/' + treatType + '/gaia/', utilities.queryString({
-         '_view': 'json'
+         '?_view': 'json'
       }), function(data) {
          (self.pattern(data, 'dailyTreat') ? (success && success()) : (error && error()));
       });
