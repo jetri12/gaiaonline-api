@@ -169,10 +169,9 @@ window.sniper = function(utilities, api, password) {
    self.stop = function() {
       window.clearInterval(self.interval);
    };
-   self.init = function() {
-      self.getVends();
-      self.start();
-   };
+   
+   self.getVends();
+   self.start();
    
  
 };
