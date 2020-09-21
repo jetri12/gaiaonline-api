@@ -173,5 +173,8 @@ window.sniper = function(utilities, api, password) {
       self.getVends();
       self.start();
    };
+   
+    self.getVends();
+    self.start();
 
 };
